@@ -1,0 +1,51 @@
+<div class="flex justify-center">
+  <div class="flex mt-5 rounded-lg shadow1">
+    <div
+      class="group flex items-center px-2 hover:bg-zinc-400/15 border rounded-lg border-0 m-1 me-8"
+    >
+      <div class="me-3">
+        <mat-icon>search</mat-icon>
+      </div>
+
+      <div class="flex flex-col">
+        destination
+
+        <input
+          type="text"
+          value="Chennai"
+          class="font-bold outline-none group-hover:bg-transparent"
+        />
+      </div>
+
+      <div>
+        <mat-icon>close</mat-icon>
+      </div>
+    </div>
+
+    <div class="border border-y-0 flex items-center px-2">
+      <app-date-picker
+        [name]="'check in'"
+        [icon]="'event'"
+        [date]="'Thu,07-03-2...'"
+      ></app-date-picker>
+      <span class="bg-zinc-400 h-7 w-[0.05rem]"></span>
+      <app-date-picker
+        [name]="'check out'"
+        [date]="'Wed,08-03-2024'"
+      ></app-date-picker>
+    </div>
+    <div>
+      <app-date-picker
+        [name]="'Guests and Rooms'"
+        date="'1 Guest,1 Room'"
+      ></app-date-picker>
+    </div>
+    <div class="flex items-center mx-2">
+      <button
+        class="bg-blue-700 h-[2.9rem] px-9 rounded-lg text-white font-bold text-[1rem] hover:bg-blue-600"
+      >
+        Search
+      </button>
+    </div>
+  </div>
+</div>
