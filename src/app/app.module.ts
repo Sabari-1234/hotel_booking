@@ -15,6 +15,14 @@ import { SearchDivComponent } from './search-div/search-div.component';
 import { DatePickerComponent } from './date-picker/date-picker.component';
 import { FiltersComponent } from './filters/filters.component';
 import { FilterComponentComponent } from './filter-component/filter-component.component';
+import { SortMapButtonComponent } from './sort-map-button/sort-map-button.component';
+import { HomeBodyComponent } from './home-body/home-body.component';
+import { HouseBlockComponent } from './house-block/house-block.component';
+
+import { StarIconComponent } from './star-icon/star-icon.component';
+import { DropDownComponent } from './drop-down/drop-down.component';
+import { HouseThirdDivComponent } from './house-third-div/house-third-div.component';
+import { HouseRightButtonComponent } from './house-right-button/house-right-button.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +34,14 @@ import { FilterComponentComponent } from './filter-component/filter-component.co
     DatePickerComponent,
     FiltersComponent,
     FilterComponentComponent,
+    SortMapButtonComponent,
+    HomeBodyComponent,
+    HouseBlockComponent,
+
+    StarIconComponent,
+    DropDownComponent,
+    HouseThirdDivComponent,
+    HouseRightButtonComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, MatIconModule],
   providers: [provideClientHydration(), provideAnimationsAsync()],
