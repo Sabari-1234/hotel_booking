@@ -23,6 +23,9 @@ import { StarIconComponent } from './star-icon/star-icon.component';
 import { DropDownComponent } from './drop-down/drop-down.component';
 import { HouseThirdDivComponent } from './house-third-div/house-third-div.component';
 import { HouseRightButtonComponent } from './house-right-button/house-right-button.component';
+import { FooterComponent } from './footer/footer.component';
+import { FooterIconsComponent } from './footer-icons/footer-icons.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -42,8 +45,10 @@ import { HouseRightButtonComponent } from './house-right-button/house-right-butt
     DropDownComponent,
     HouseThirdDivComponent,
     HouseRightButtonComponent,
+    FooterComponent,
+    FooterIconsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, MatIconModule],
+  imports: [BrowserModule, AppRoutingModule, MatIconModule, HttpClientModule],
   providers: [provideClientHydration(), provideAnimationsAsync()],
   bootstrap: [AppComponent],
 })

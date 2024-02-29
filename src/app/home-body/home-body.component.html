@@ -1,10 +1,12 @@
-<div class="bg-[rgb(243,244,245)] h-auto flex justify-center mt-4">
+<div class="bg-[rgb(243,244,245)] flex justify-center">
   <div class="w-[66vw]">
     <app-sort-map-button></app-sort-map-button>
 
-    <div *ngFor="let index of generateRange(30)">
+    <div *ngFor="let detail of details">
       <app-house-block
-        [url]="'https://loremflickr.com/640/480/city'"
+        [city]="detail.city"
+        [image]="detail.image"
+        [favorite]="detail.favorite"
       ></app-house-block>
     </div>
   </div>

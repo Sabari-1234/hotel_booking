@@ -1,11 +1,13 @@
 <div class="relative">
   <span class="font-bold ms-4">{{ name }} </span
-  ><span *ngIf="name === 'Price:'">{{ name2 }}</span
+  ><span *ngIf="name === 'Price:'" class="text-zinc-600">{{ name2 }}</span
   ><br />
   <button
-    class="rounded-s-full rounded-e-full border border-2 h-9 outline-none focus:border-blue-400"
+    class="rounded-s-full rounded-e-full border h-8 outline-none focus:border-blue-400 text-left ps-3 text-zinc-600"
     [class.w-60]="name === 'Price:'"
     [class.w-44]="name !== 'Price:'"
-  ></button>
-  <mat-icon class="absolute right-4 bottom-2">expand_more</mat-icon>
+  >
+    {{ btnName }}
+  </button>
+  <mat-icon class="absolute right-4 bottom-1">expand_more</mat-icon>
 </div>

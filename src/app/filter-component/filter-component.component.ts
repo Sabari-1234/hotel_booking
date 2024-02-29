@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 export class FilterComponentComponent {
   @Input() name!: string;
   @Input() name2!: string;
+  @Input() btnName!: string;
 }

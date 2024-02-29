@@ -6,5 +6,8 @@ import { Component, Input } from '@angular/core';
   styleUrl: './house-block.component.css',
 })
 export class HouseBlockComponent {
-  @Input() url: any;
+  @Input() city: any;
+  @Input() image: any;
+  @Input() favorite: any;
+  fillColor: any = 'red';
 }
