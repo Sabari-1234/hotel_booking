@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ApiService } from '../shared/api.service';
 
 @Component({
@@ -7,26 +7,13 @@ import { ApiService } from '../shared/api.service';
   styleUrl: './home-body.component.css',
 })
 export class HomeBodyComponent implements OnInit {
-  generateRange(count: number): number[] {
-    return Array.from({ length: count }, (_, i) => i);
-  }
+  @Input() cityFilter: any;
 
   constructor(public api: ApiService) {}
 
-  details!: any;
+  //details: any;
 
-  getdata = () => {
-    this.api.getBlock().subscribe(
-      (res: any) => {
-        this.details = res;
-        console.log(this.details);
-      },
-      (err: any) => {
-        console.log(err);
-      }
-    );
-  };
   ngOnInit(): void {
-    this.getdata();
+    this.api.getdata();
   }
 }

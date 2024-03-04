@@ -1,13 +1,20 @@
-<div class="border px-2 py-1 rounded-lg bg-zinc-200/100 hover:bg-zinc-300 flex">
-  <div class="">
-    <p class="text-[12px] font-bold" style="margin: 0px">{{ name }}</p>
+<div
+  class="border px-2 py-[1px] rounded-lg bg-zinc-200/100 hover:bg-zinc-300 flex xl:justify-normal justify-between"
+>
+  <div class="flex flex-col">
+    <span class="text-[12px] font-bold">{{ name }}</span>
 
-    <p class="text-[17px] font-bold" style="margin: 0px">{{ price }}</p>
-    <p class="text-[12px]" style="margin: 0px">{{ timing }}</p>
+    <span class="text-[17px] font-bold -mt-1">{{ price }}</span>
+    <span class="text-[12px] -mt-1">
+      {{ timing }}
+    </span>
   </div>
 
-  <div class="flex justify-end ps-1">
+  <div
+    class="flex justify-end ps-1 pt-3 xl:pt-0"
+    *ngIf="name !== 'Booking.com'"
+  >
     <mat-icon>expand_more</mat-icon>
   </div>
-  <div *ngIf="name === 'Booking.com'" class="w-[3.9px]"></div>
+  <div *ngIf="name === 'Booking.com'" class="w-[31px]"></div>
 </div>

@@ -1,5 +1,20 @@
-<div class="min-h-screen h-fit">
+<div class="h-fit">
   <app-search-div></app-search-div>
-  <app-filters></app-filters>
-  <app-home-body></app-home-body>
+  <app-filters [cityChange]="cityChange" class="md:block hidden"></app-filters>
+  <div class="flex justify-center my-3 md:hidden">
+    <div class="flex items-center">
+      <div class="bg-white shadow3 rounded-lg">
+        <app-mobile-sort-filter-btn name="Sort"></app-mobile-sort-filter-btn>
+        <app-mobile-sort-filter-btn name="Filter"></app-mobile-sort-filter-btn>
+      </div>
+
+      <div
+        class="bg-white ms-2 p-[0.63rem] self-center flex items-center shadow3 rounded-lg"
+      >
+        <mat-icon>info</mat-icon>
+      </div>
+    </div>
+  </div>
+
+  <app-home-body [cityFilter]="cityFilter"></app-home-body>
 </div>

@@ -1,8 +1,8 @@
 <div class="bg-[rgb(243,244,245)] flex justify-center">
-  <div class="w-[66vw]">
+  <div class="xl:w-[66vw] w-[95vw]">
     <app-sort-map-button></app-sort-map-button>
 
-    <div *ngFor="let detail of details">
+    <div *ngFor="let detail of api.details">
       <app-house-block
         [city]="detail.city"
         [image]="detail.image"

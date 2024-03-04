@@ -1,0 +1,32 @@
+<div
+  class="absolute shadow1 rounded-lg bg-white w-[22vw] -left-40 top-14 p-6 hidden group-focus-within:block"
+>
+  <p class="font-bold text-[16px]">Find me a stay close...</p>
+  <p class="font-bold">This popular site:</p>
+  <form action="" #form1="ngForm">
+    <select
+      name=""
+      id=""
+      class="w-full border border-zinc-400 rounded-lg h-8 outline-none mb-4"
+      name="selectCity"
+      #select="ngModel"
+      [(ngModel)]="cityName"
+    >
+      <option value="City center">City center</option>
+      <option [value]="detail.city" *ngFor="let detail of details">
+        {{ detail.city }}
+      </option>
+    </select>
+
+    <hr />
+    <div class="flex justify-between mt-4">
+      <app-filter-buttons name="Reset"></app-filter-buttons>
+      <app-filter-buttons
+        name="Apply"
+        [apply]="apply"
+        [fireEvent]="fireEvent"
+        [city]="form1.value.selectCity"
+      ></app-filter-buttons>
+    </div>
+  </form>
+</div>

@@ -17,4 +17,31 @@ export class ApiService {
         })
       );
   };
+  details: any;
+
+  filter(city: any) {
+    this.getBlock().subscribe(
+      (res: any) => {
+        this.details = res.filter((data: any) => data.city === city);
+
+        console.log(this.details);
+      },
+      (err: any) => {
+        console.log(err);
+      }
+    );
+    return this.details;
+  }
+  getdata = () => {
+    this.getBlock().subscribe(
+      (res: any) => {
+        this.details = res;
+
+        console.log(this.details);
+      },
+      (err: any) => {
+        console.log(err);
+      }
+    );
+  };
 }

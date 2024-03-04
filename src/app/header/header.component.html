@@ -1,7 +1,7 @@
-<div class="flex justify-around">
+<div class="flex xl:justify-around justify-between xl:px-0 md:px-8 px-6">
   <div class="flex items-center text-xl font-[900] text-violet-950">Mr.360</div>
 
-  <div class="flex">
+  <div class="flex justify-end">
     <app-header-small-comp
       [para]="'favourite'"
       [icon]="'favorite'"
@@ -9,6 +9,7 @@
     <app-header-small-comp
       [para]="'EN.₹'"
       [icon]="'language'"
+      class="md:block hidden"
     ></app-header-small-comp>
     <app-header-small-comp
       [para]="'Login'"

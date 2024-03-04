@@ -1,13 +1,13 @@
 <div class="flex justify-center">
-  <div class="flex mt-5 rounded-xl shadow1 p-[1px]">
+  <div class="md:flex mt-5 rounded-xl shadow1 p-[1px]">
     <div
-      class="group flex items-center px-2 hover:bg-zinc-400/15 border rounded-lg border-0 m-1 me-8"
+      class="group flex items-center px-2 hover:bg-zinc-400/15 rounded-lg border-0 m-1 me-8"
     >
       <div class="me-3">
         <mat-icon>search</mat-icon>
       </div>
 
-      <div class="flex flex-col">
+      <div class="flex flex-col w-32 xl:w-fit">
         destination
 
         <input
@@ -17,30 +17,36 @@
         />
       </div>
 
-      <div>
+      <div class="md:block hidden">
         <mat-icon>close</mat-icon>
       </div>
     </div>
+    <div class="flex border-t md:border-t-0">
+      <div
+        class="md:border md:border-y-0 flex items-center px-2 border-r border-y-0"
+      >
+        <app-date-picker
+          [name]="'check in'"
+          [icon]="'event'"
+          [date]="'Thu,07-03-2...'"
+        ></app-date-picker>
+        <span class="bg-zinc-400 h-7 w-[0.05rem] xl:block hidden"></span>
 
-    <div class="border border-y-0 flex items-center px-2">
-      <app-date-picker
-        [name]="'check in'"
-        [icon]="'event'"
-        [date]="'Thu,07-03-2...'"
-      ></app-date-picker>
-      <span class="bg-zinc-400 h-7 w-[0.05rem]"></span>
-      <app-date-picker
-        [name]="'check out'"
-        [date]="'Wed,08-03-2024'"
-      ></app-date-picker>
+        <app-date-picker
+          [name]="'check out'"
+          [date]="'Wed,08-03-2024'"
+          class="xl:block hidden"
+        ></app-date-picker>
+      </div>
+      <div>
+        <app-date-picker
+          [name]="'Guests and Rooms'"
+          date="'1 Guest,1 Room'"
+        ></app-date-picker>
+      </div>
     </div>
-    <div>
-      <app-date-picker
-        [name]="'Guests and Rooms'"
-        date="'1 Guest,1 Room'"
-      ></app-date-picker>
-    </div>
-    <div class="flex items-center mx-2">
+
+    <div class="items-center mx-2 md:flex hidden">
       <button
         class="bg-[#007cc2] h-[2.9rem] px-9 rounded-lg text-white font-bold text-[1rem] hover:bg-blue-600"
       >

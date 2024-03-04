@@ -1,0 +1,9 @@
+<button
+  class="py-2 px-8 rounded-lg font-[600] text-[15px] group"
+  [class.bg-[rgb(0,124,194)]]="name === 'Apply'"
+  [class.text-white]="name === 'Apply'"
+  [class.text-zinc-500]="name === 'Reset'"
+  (click)="fun()"
+>
+  {{ name }}
+</button>

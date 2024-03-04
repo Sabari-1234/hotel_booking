@@ -1,8 +1,12 @@
-<div class="rounded-xl flex gap-2 shadow2 mb-2">
+<div class="rounded-xl md:flex md:gap-2 shadow2 mb-2 mx-4 md:mx-0">
   <div>
-    <img [src]="image" alt="" class="rounded-s-xl h-[206px] w-[230px]" />
+    <img
+      [src]="image"
+      alt=""
+      class="md:rounded-s-xl md:h-full md:w-[230px] w-full h-52 rounded-t-xl md:rounded-t-none"
+    />
   </div>
-  <div class="w-[42%] my-2">
+  <div class="md:w-[42%] my-2 w-full pl-2 md:pl-0">
     <div class="flex justify-between pe-2">
       <p class="font-[700] text-xl">{{ city }}</p>
       <svg
@@ -31,7 +35,7 @@
       <app-drop-down name1="6.8 " name="(244 reviews)"></app-drop-down>
     </div>
   </div>
-  <div class="w-[32%] mt-2 mx-2">
+  <div class="md:w-[32%] mt-2 mx-2 w-[95.5%] pb-[0.13rem] md:pb-0">
     <app-house-third-div></app-house-third-div>
   </div>
 </div>

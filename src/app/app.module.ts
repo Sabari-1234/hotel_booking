@@ -26,6 +26,10 @@ import { HouseRightButtonComponent } from './house-right-button/house-right-butt
 import { FooterComponent } from './footer/footer.component';
 import { FooterIconsComponent } from './footer-icons/footer-icons.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LocationSortComponent } from './location-sort/location-sort.component';
+import { FilterButtonsComponent } from './filter-buttons/filter-buttons.component';
+import { FormsModule } from '@angular/forms';
+import { MobileSortFilterBtnComponent } from './mobile-sort-filter-btn/mobile-sort-filter-btn.component';
 
 @NgModule({
   declarations: [
@@ -47,8 +51,17 @@ import { HttpClientModule } from '@angular/common/http';
     HouseRightButtonComponent,
     FooterComponent,
     FooterIconsComponent,
+    LocationSortComponent,
+    FilterButtonsComponent,
+    MobileSortFilterBtnComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, MatIconModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MatIconModule,
+    HttpClientModule,
+    FormsModule,
+  ],
   providers: [provideClientHydration(), provideAnimationsAsync()],
   bootstrap: [AppComponent],
 })
