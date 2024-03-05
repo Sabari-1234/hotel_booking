@@ -17,6 +17,15 @@ export class ApiService {
         })
       );
   };
+  getSingleBlock = (id: any) => {
+    return this.httpClient
+      .get<any>('https://65deec33ff5e305f32a0dd91.mockapi.io/api/home/' + id)
+      .pipe(
+        map((res: any) => {
+          return res;
+        })
+      );
+  };
   details: any;
 
   filter(city: any) {

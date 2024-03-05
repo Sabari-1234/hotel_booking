@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { ApiService } from '../shared/api.service';
 
 @Component({
@@ -8,6 +8,7 @@ import { ApiService } from '../shared/api.service';
 })
 export class LocationSortComponent implements OnInit {
   @Output() public childEvent = new EventEmitter();
+  @Input() name: any;
 
   constructor(public api: ApiService) {}
 

@@ -1,12 +1,21 @@
-<div class="rounded-xl md:flex md:gap-2 shadow2 mb-2 mx-4 md:mx-0">
+<div
+  [ngClass]="{
+    'md:flex rounded-xl  md:gap-2 shadow2 mb-2 mx-4 md:mx-0 ': !singleBlock,
+    '': singleBlock
+  }"
+>
   <div>
     <img
       [src]="image"
       alt=""
-      class="md:rounded-s-xl md:h-full md:w-[230px] w-full h-52 rounded-t-xl md:rounded-r-none"
+      [ngClass]="{
+        'md:rounded-s-xl md:h-full md:w-[230px] w-full h-52 rounded-t-xl md:rounded-r-none':
+          !singleBlock,
+        'w-[10] h-[400px]': singleBlock
+      }"
     />
   </div>
-  <div class="md:w-[42%] my-2 w-full pl-2 md:pl-0">
+  <div [ngClass]="{ 'md:w-[42%] my-2 w-full pl-2 md:pl-0': !singleBlock }">
     <div class="flex justify-between pe-2">
       <p class="font-[700] text-xl">{{ city }}</p>
       <svg
@@ -32,10 +41,10 @@
     </div>
     <div>
       <app-drop-down name="5 km to city center"></app-drop-down>
-      <app-drop-down name1="6.8 " name="(244 reviews)"></app-drop-down>
+      <app-drop-down [name1]="rating" name="(244 reviews)"></app-drop-down>
     </div>
   </div>
   <div class="md:w-[32%] mt-2 mx-2 w-[95.5%] pb-[0.13rem] md:pb-0">
-    <app-house-third-div></app-house-third-div>
+    <app-house-third-div [id]="id"></app-house-third-div>
   </div>
 </div>

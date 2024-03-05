@@ -30,6 +30,7 @@ import { LocationSortComponent } from './location-sort/location-sort.component';
 import { FilterButtonsComponent } from './filter-buttons/filter-buttons.component';
 import { FormsModule } from '@angular/forms';
 import { MobileSortFilterBtnComponent } from './mobile-sort-filter-btn/mobile-sort-filter-btn.component';
+import { BlockModelComponent } from './block-model/block-model.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { MobileSortFilterBtnComponent } from './mobile-sort-filter-btn/mobile-so
     LocationSortComponent,
     FilterButtonsComponent,
     MobileSortFilterBtnComponent,
+    BlockModelComponent,
   ],
   imports: [
     BrowserModule,
