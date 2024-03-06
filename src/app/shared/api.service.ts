@@ -31,8 +31,14 @@ export class ApiService {
   filter(city: any) {
     this.getBlock().subscribe(
       (res: any) => {
-        this.details = res.filter((data: any) => data.city === city);
-
+        console.log(res.filter((data: any) => data.city === city));
+        console.log(res.filter((data: any) => data.rating === city));
+        if (res.filter((data: any) => data.city === city).length !== 0) {
+          this.details = res.filter((data: any) => data.city === city);
+        }
+        if (res.filter((data: any) => data.rating === city).length !== 0) {
+          this.details = res.filter((data: any) => data.rating === city);
+        }
         console.log(this.details);
       },
       (err: any) => {

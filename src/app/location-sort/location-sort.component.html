@@ -13,9 +13,16 @@
       [(ngModel)]="cityName"
     >
       <option value="City center">City center</option>
-      <option [value]="detail.city" *ngFor="let detail of details">
-        {{ detail.city }}
-      </option>
+      <ng-container *ngIf="name == 'Location'">
+        <option [value]="detail.city" *ngFor="let detail of details">
+          {{ detail.city }}
+        </option>
+      </ng-container>
+      <ng-container *ngIf="name == 'Guest rating'">
+        <option [value]="detail.rating" *ngFor="let detail of details">
+          {{ detail.rating }}
+        </option>
+      </ng-container>
     </select>
 
     <hr />
