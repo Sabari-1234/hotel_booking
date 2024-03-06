@@ -22,7 +22,12 @@ export class FilterComponentComponent {
     console.log(data);
     this.btnName = data;
 
-    if (data !== 'City center' && data !== 'select') {
+    if (
+      data !== 'City center' &&
+      data !== 'Select' &&
+      data !== 'All' &&
+      data !== '₹90-₹45,000'
+    ) {
       console.log(data + 'event');
 
       this.cityChange(data);

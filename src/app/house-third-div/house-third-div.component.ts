@@ -8,5 +8,6 @@ import { ApiService } from '../shared/api.service';
 })
 export class HouseThirdDivComponent {
   @Input() id: any;
+  @Input() price: any;
   constructor(public api: ApiService) {}
 }

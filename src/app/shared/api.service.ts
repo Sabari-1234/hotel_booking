@@ -31,14 +31,28 @@ export class ApiService {
   filter(city: any) {
     this.getBlock().subscribe(
       (res: any) => {
-        console.log(res.filter((data: any) => data.city === city));
-        console.log(res.filter((data: any) => data.rating === city));
+        console.log(res.filter((data: any) => data.distance == city));
+
         if (res.filter((data: any) => data.city === city).length !== 0) {
           this.details = res.filter((data: any) => data.city === city);
-        }
-        if (res.filter((data: any) => data.rating === city).length !== 0) {
+        } else if (
+          res.filter((data: any) => data.rating === city).length !== 0
+        ) {
           this.details = res.filter((data: any) => data.rating === city);
+        } else if (
+          res.filter((data: any) => data.price === city).length !== 0
+        ) {
+          this.details = res.filter((data: any) => data.price === city);
+        } else if (
+          res.filter((data: any) => data.property === city).length !== 0
+        ) {
+          this.details = res.filter((data: any) => data.property === city);
+        } else if (
+          res.filter((data: any) => data.distance == city).length !== 0
+        ) {
+          this.details = res.filter((data: any) => data.distance == city);
         }
+
         console.log(this.details);
       },
       (err: any) => {

@@ -23,6 +23,21 @@
           {{ detail.rating }}
         </option>
       </ng-container>
+      <ng-container *ngIf="name == 'Price:'">
+        <option [value]="detail.price" *ngFor="let detail of details">
+          ₹ {{ detail.price }}
+        </option>
+      </ng-container>
+      <ng-container *ngIf="name == 'Property type'">
+        <option [value]="detail.property" *ngFor="let detail of details">
+          {{ detail.property }}
+        </option>
+      </ng-container>
+      <ng-container *ngIf="name == 'Filters'">
+        <option [value]="detail.distance" *ngFor="let detail of details">
+          {{ detail.distance / 1000 }} km
+        </option>
+      </ng-container>
     </select>
 
     <hr />

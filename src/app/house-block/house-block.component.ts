@@ -13,6 +13,8 @@ export class HouseBlockComponent {
   @Input() id: any;
   @Input() singleBlock: any;
   @Input() rating: any;
-
+  @Input() price: any;
+  @Input() property: any;
+  @Input() distance: any;
   fillColor: any = 'red';
 }

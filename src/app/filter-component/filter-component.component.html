@@ -15,6 +15,14 @@
   <app-location-sort
     (childEvent)="childdata($event)"
     [name]="name"
-    [firstvalue]="name == 'Location' ? 'City center' : 'select'"
+    [firstvalue]="
+      name == 'Location'
+        ? 'City center'
+        : name == 'Guest rating'
+        ? 'All'
+        : name == 'Price:'
+        ? '₹90-₹45,000'
+        : 'Select'
+    "
   ></app-location-sort>
 </div>

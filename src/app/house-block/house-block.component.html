@@ -37,14 +37,16 @@
       <app-star-icon></app-star-icon>
       <app-star-icon></app-star-icon>
 
-      <span class="ms-2">Hotel</span>
+      <span class="ms-2">{{ property }}</span>
     </div>
     <div>
-      <app-drop-down name="5 km to city center"></app-drop-down>
+      <app-drop-down
+        [name]="distance / 1000 + ' km to ' + city"
+      ></app-drop-down>
       <app-drop-down [name1]="rating" name="(244 reviews)"></app-drop-down>
     </div>
   </div>
   <div class="md:w-[32%] mt-2 mx-2 w-[95.5%] pb-[0.13rem] md:pb-0">
-    <app-house-third-div [id]="id"></app-house-third-div>
+    <app-house-third-div [id]="id" [price]="price"></app-house-third-div>
   </div>
 </div>
