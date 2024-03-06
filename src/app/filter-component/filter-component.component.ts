@@ -18,8 +18,11 @@ export class FilterComponentComponent {
   constructor(public api: ApiService) {}
 
   childdata(data: any) {
+    console.log('aaa');
+    console.log(data);
     this.btnName = data;
-    if (data !== 'City center') {
+
+    if (data !== 'City center' && data !== 'select') {
       console.log(data + 'event');
 
       this.cityChange(data);

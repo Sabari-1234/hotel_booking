@@ -12,7 +12,7 @@
       #select="ngModel"
       [(ngModel)]="cityName"
     >
-      <option value="City center">City center</option>
+      <option [value]="firstvalue">{{ firstvalue }}</option>
       <ng-container *ngIf="name == 'Location'">
         <option [value]="detail.city" *ngFor="let detail of details">
           {{ detail.city }}

@@ -9,10 +9,11 @@ import { ApiService } from '../shared/api.service';
 export class LocationSortComponent implements OnInit {
   @Output() public childEvent = new EventEmitter();
   @Input() name: any;
+  @Input() firstvalue: any;
 
   constructor(public api: ApiService) {}
 
-  cityName: any = 'City center';
+  cityName: any;
 
   fireEvent = () => {
     this.childEvent.emit(this.cityName);
@@ -32,7 +33,9 @@ export class LocationSortComponent implements OnInit {
       }
     );
   };
+
   ngOnInit(): void {
+    this.cityName = this.firstvalue;
     this.fireEvent();
     this.getData();
   }

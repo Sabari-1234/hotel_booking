@@ -15,5 +15,6 @@
   <app-location-sort
     (childEvent)="childdata($event)"
     [name]="name"
+    [firstvalue]="name == 'Location' ? 'City center' : 'select'"
   ></app-location-sort>
 </div>
