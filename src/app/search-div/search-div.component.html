@@ -12,13 +12,13 @@
 
         <input
           type="text"
-          value="Chennai"
           class="font-bold outline-none group-hover:bg-transparent"
-          (input)="fun()"
+          (input)="fun($event)"
+          #search
         />
       </div>
 
-      <div class="md:block hidden">
+      <div class="md:block hidden" (click)="closed(search)">
         <mat-icon>close</mat-icon>
       </div>
     </div>
