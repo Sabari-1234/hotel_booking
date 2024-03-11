@@ -31,6 +31,8 @@ import { FilterButtonsComponent } from './filter-buttons/filter-buttons.componen
 import { FormsModule } from '@angular/forms';
 import { MobileSortFilterBtnComponent } from './mobile-sort-filter-btn/mobile-sort-filter-btn.component';
 import { BlockModelComponent } from './block-model/block-model.component';
+import { AddBlockComponent } from './add-block/add-block.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +58,8 @@ import { BlockModelComponent } from './block-model/block-model.component';
     FilterButtonsComponent,
     MobileSortFilterBtnComponent,
     BlockModelComponent,
+    AddBlockComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,

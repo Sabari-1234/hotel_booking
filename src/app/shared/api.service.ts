@@ -9,22 +9,18 @@ export class ApiService {
   constructor(private httpClient: HttpClient) {}
 
   getBlock = () => {
-    return this.httpClient
-      .get<any>('https://65deec33ff5e305f32a0dd91.mockapi.io/api/home')
-      .pipe(
-        map((res: any) => {
-          return res;
-        })
-      );
+    return this.httpClient.get<any>('http://localhost:3000/home').pipe(
+      map((res: any) => {
+        return res;
+      })
+    );
   };
   getSingleBlock = (id: any) => {
-    return this.httpClient
-      .get<any>('https://65deec33ff5e305f32a0dd91.mockapi.io/api/home/' + id)
-      .pipe(
-        map((res: any) => {
-          return res;
-        })
-      );
+    return this.httpClient.get<any>('http://localhost:3000/home/' + id).pipe(
+      map((res: any) => {
+        return res;
+      })
+    );
   };
   details: any;
 
@@ -71,6 +67,14 @@ export class ApiService {
       (err: any) => {
         console.log(err);
       }
+    );
+  };
+
+  postData = (data: any) => {
+    return this.httpClient.post<any>('http://localhost:3000/home', data).pipe(
+      map((res: any) => {
+        return res;
+      })
     );
   };
 }

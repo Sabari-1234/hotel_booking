@@ -1,0 +1,53 @@
+<div class="form-card1">
+  <div class="form-card2">
+    <form class="form" #form1="ngForm">
+      <p class="form-heading">Enter Hotel Details</p>
+
+      <div class="form-field">
+        <input
+          required=""
+          placeholder="City Name"
+          class="input-field"
+          type="text"
+          name="city"
+          ngModel
+        />
+      </div>
+
+      <div class="form-field">
+        <input
+          required=""
+          placeholder="Property Type"
+          class="input-field"
+          type="text"
+          name="property"
+          ngModel
+        />
+      </div>
+      <div class="form-field">
+        <input
+          required=""
+          placeholder="Distance in meter"
+          class="input-field"
+          type="number"
+          name="distance"
+          ngModel
+        />
+      </div>
+      <div class="form-field">
+        <input
+          required=""
+          placeholder="Price"
+          class="input-field"
+          type="text"
+          name="price"
+          ngModel
+        />
+      </div>
+
+      <button class="sendMessage-btn" (click)="AddBlock(form1.value)">
+        Add Data
+      </button>
+    </form>
+  </div>
+</div>

@@ -1,6 +1,14 @@
-<div class="p-3 hover:bg-zinc-400/20">
-  <p class="flex items-center pt-3">
-    <mat-icon class="me-2">{{ icon }}</mat-icon>
-    <span class="md:inline hidden">{{ para }}</span>
-  </p>
+<div (click)="addMenu()">
+  <div class="p-3 hover:bg-zinc-400/20 block group-focus-within:bg-zinc-400/20">
+    <button class="flex items-center pt-3 mb-[12px]">
+      <mat-icon class="me-2">{{ icon }}</mat-icon>
+      <span class="md:inline hidden">{{ para }}</span>
+    </button>
+    <div
+      *ngIf="para == 'Menu' && addMenuBool"
+      class="absolute addbtn w-fit h-fit bg-white shadow-xl rounded-xl"
+    >
+      <app-menu></app-menu>
+    </div>
+  </div>
 </div>

@@ -1,0 +1,354 @@
+{
+  "home": [
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "Athens-Clarke County",
+      "favorite": true,
+      "rating": "4",
+      "price": "432.00",
+      "property": "Clothing",
+      "distance": 93736,
+      "id": "1"
+    },
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "Euless",
+      "favorite": false,
+      "rating": "1",
+      "price": "291.00",
+      "property": "Health",
+      "distance": 95213,
+      "id": "2"
+    },
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "Merced",
+      "favorite": true,
+      "rating": "6",
+      "price": "814.00",
+      "property": "Toys",
+      "distance": 27861,
+      "id": "3"
+    },
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "Kettering",
+      "favorite": false,
+      "rating": "4",
+      "price": "106.00",
+      "property": "Baby",
+      "distance": 93429,
+      "id": "4"
+    },
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "Delano",
+      "favorite": true,
+      "rating": "9",
+      "price": "195.00",
+      "property": "Books",
+      "distance": 37080,
+      "id": "5"
+    },
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "Chesterfield",
+      "favorite": true,
+      "rating": "6",
+      "price": "776.00",
+      "property": "Movies",
+      "distance": 41408,
+      "id": "6"
+    },
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "Hempstead",
+      "favorite": false,
+      "rating": "3",
+      "price": "766.00",
+      "property": "Garden",
+      "distance": 98535,
+      "id": "7"
+    },
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "Greenwood",
+      "favorite": false,
+      "rating": "9",
+      "price": "582.00",
+      "property": "Tools",
+      "distance": 77885,
+      "id": "8"
+    },
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "Commerce City",
+      "favorite": false,
+      "rating": "8",
+      "price": "875.00",
+      "property": "Computers",
+      "distance": 28367,
+      "id": "9"
+    },
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "Medford",
+      "favorite": false,
+      "rating": "8",
+      "price": "479.00",
+      "property": "Tools",
+      "distance": 81564,
+      "id": "10"
+    },
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "Carmichael",
+      "favorite": true,
+      "rating": "7",
+      "price": "29.00",
+      "property": "Beauty",
+      "distance": 34946,
+      "id": "11"
+    },
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "Burke",
+      "favorite": false,
+      "rating": "8",
+      "price": "18.00",
+      "property": "Electronics",
+      "distance": 39483,
+      "id": "12"
+    },
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "Warner Robins",
+      "favorite": true,
+      "rating": "3",
+      "price": "81.00",
+      "property": "Garden",
+      "distance": 97182,
+      "id": "13"
+    },
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "Somerville",
+      "favorite": true,
+      "rating": "5",
+      "price": "561.00",
+      "property": "Garden",
+      "distance": 40534,
+      "id": "14"
+    },
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "Worcester",
+      "favorite": false,
+      "rating": "3",
+      "price": "869.00",
+      "property": "Kids",
+      "distance": 80007,
+      "id": "15"
+    },
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "Waipahu",
+      "favorite": false,
+      "rating": "6",
+      "price": "940.00",
+      "property": "Home",
+      "distance": 52887,
+      "id": "16"
+    },
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "Spring",
+      "favorite": false,
+      "rating": "1",
+      "price": "53.00",
+      "property": "Clothing",
+      "distance": 79301,
+      "id": "17"
+    },
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "Southfield",
+      "favorite": false,
+      "rating": "1",
+      "price": "286.00",
+      "property": "Games",
+      "distance": 40888,
+      "id": "18"
+    },
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "Wauwatosa",
+      "favorite": true,
+      "rating": "4",
+      "price": "504.00",
+      "property": "Clothing",
+      "distance": 25498,
+      "id": "19"
+    },
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "Port Arthur",
+      "favorite": true,
+      "rating": "8",
+      "price": "447.00",
+      "property": "Grocery",
+      "distance": 71677,
+      "id": "20"
+    },
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "Minot",
+      "favorite": true,
+      "rating": "9",
+      "price": "351.00",
+      "property": "Shoes",
+      "distance": 78022,
+      "id": "21"
+    },
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "Lakeland",
+      "favorite": false,
+      "rating": "2",
+      "price": "712.00",
+      "property": "Jewelery",
+      "distance": 33062,
+      "id": "22"
+    },
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "Port St. Lucie",
+      "favorite": true,
+      "rating": "5",
+      "price": "593.00",
+      "property": "Books",
+      "distance": 16340,
+      "id": "23"
+    },
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "Urbandale",
+      "favorite": false,
+      "rating": "7",
+      "price": "388.00",
+      "property": "Automotive",
+      "distance": 25242,
+      "id": "24"
+    },
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "Davis",
+      "favorite": false,
+      "rating": "3",
+      "price": "591.00",
+      "property": "Outdoors",
+      "distance": 90422,
+      "id": "25"
+    },
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "South Bend",
+      "favorite": false,
+      "rating": "8",
+      "price": "34.00",
+      "property": "Grocery",
+      "distance": 18435,
+      "id": "26"
+    },
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "Sunrise",
+      "favorite": false,
+      "rating": "1",
+      "price": "914.00",
+      "property": "Games",
+      "distance": 52232,
+      "id": "27"
+    },
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "St. Peters",
+      "favorite": true,
+      "rating": "2",
+      "price": "507.00",
+      "property": "Music",
+      "distance": 5758,
+      "id": "28"
+    },
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "Texas City",
+      "favorite": true,
+      "rating": "5",
+      "price": "594.00",
+      "property": "Home",
+      "distance": 64434,
+      "id": "29"
+    },
+    {
+      "image": "https://loremflickr.com/640/480/city",
+      "city": "Philadelphia",
+      "favorite": true,
+      "rating": "4",
+      "price": "831.00",
+      "property": "Grocery",
+      "distance": 8808,
+      "id": "30"
+    },
+    {
+      "id": "29f7",
+      "city": "hongkong",
+      "property": "house",
+      "distance": 145552,
+      "price": "12000",
+      "image": "https://loremflickr.com/640/480/city",
+      "favorite": true,
+      "rating": "0"
+    },
+    {
+      "id": "490e",
+      "city": "hong",
+      "property": "houseuu",
+      "distance": 145552,
+      "price": "12000",
+      "image": "https://loremflickr.com/640/480/city",
+      "favorite": true,
+      "rating": "0"
+    },
+    {
+      "id": "3e50",
+      "city": "newzealand",
+      "property": "home",
+      "distance": 76666,
+      "price": "28220",
+      "image": "https://loremflickr.com/640/480/city",
+      "favorite": true,
+      "rating": "0"
+    },
+    {
+      "id": "ad61",
+      "city": "",
+      "property": "",
+      "distance": "",
+      "price": "",
+      "image": "https://loremflickr.com/640/480/city",
+      "favorite": true,
+      "rating": "0"
+    },
+    {
+      "id": "0bbe",
+      "city": "",
+      "property": "",
+      "distance": "",
+      "price": "",
+      "image": "https://loremflickr.com/640/480/city",
+      "favorite": true,
+      "rating": "0"
+    }
+  ]
+}
