@@ -329,26 +329,6 @@
       "image": "https://loremflickr.com/640/480/city",
       "favorite": true,
       "rating": "0"
-    },
-    {
-      "id": "ad61",
-      "city": "",
-      "property": "",
-      "distance": "",
-      "price": "",
-      "image": "https://loremflickr.com/640/480/city",
-      "favorite": true,
-      "rating": "0"
-    },
-    {
-      "id": "0bbe",
-      "city": "",
-      "property": "",
-      "distance": "",
-      "price": "",
-      "image": "https://loremflickr.com/640/480/city",
-      "favorite": true,
-      "rating": "0"
     }
   ]
 }

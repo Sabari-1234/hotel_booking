@@ -33,6 +33,7 @@ import { MobileSortFilterBtnComponent } from './mobile-sort-filter-btn/mobile-so
 import { BlockModelComponent } from './block-model/block-model.component';
 import { AddBlockComponent } from './add-block/add-block.component';
 import { MenuComponent } from './menu/menu.component';
+import { LodingComponent } from './loding/loding.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { MenuComponent } from './menu/menu.component';
     BlockModelComponent,
     AddBlockComponent,
     MenuComponent,
+    LodingComponent,
   ],
   imports: [
     BrowserModule,

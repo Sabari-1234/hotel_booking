@@ -14,5 +14,29 @@
         [distance]="detail.distance"
       ></app-house-block>
     </div>
+    <div class="flex justify-center h-20 items-center">
+      <button (click)="api.backward()">
+        <mat-icon class="font-bold">navigate_before</mat-icon>
+      </button>
+      <p
+        class="font-bold"
+        style="margin-bottom: 8px"
+        *ngIf="api.totalPages != 0"
+      >
+        {{ api.pageIndex + 1 }} of {{ api.totalPages }} Pages (Total Items :
+        {{ api.totalItems }})
+      </p>
+      <p
+        class="font-bold"
+        style="margin-bottom: 8px"
+        *ngIf="api.totalPages == 0"
+      >
+        {{ api.pageIndex }} of {{ api.totalPages }} Pages (Total Items :
+        {{ api.totalItems }})
+      </p>
+      <button (click)="api.forward()">
+        <mat-icon class="font-bold">navigate_next</mat-icon>
+      </button>
+    </div>
   </div>
 </div>
