@@ -23,6 +23,35 @@ export class ApiService {
     );
   };
   details: any;
+  filters: any;
+
+  //similar elements
+  findSimilarObjects(array1: any, array2: any, key: any) {
+    // Create an empty array to store the similar objects
+    let similarObjects: any = [];
+    console.log(array1, '  ', array2);
+    // Iterate through the first array
+    array1.forEach((obj1: any) => {
+      // Check if the current object exists in the second array
+      const matchingObject = array2.find(
+        (obj2: any) => obj2[key] === obj1[key]
+      );
+      if (matchingObject) {
+        // If it does, add it to the similarObjects array
+        console.log(similarObjects);
+        similarObjects.push(obj1);
+      }
+    });
+
+    // Return the array containing the similar objects
+    return similarObjects;
+  }
+  boolVal = true;
+  city: any;
+  rating: any;
+  price: any;
+  property: any;
+  distance: any;
 
   filter(city: any) {
     this.getBlock().subscribe(
@@ -31,23 +60,139 @@ export class ApiService {
 
         if (res.filter((data: any) => data.city === city).length !== 0) {
           this.details = res.filter((data: any) => data.city === city);
+
+          if (this.city) {
+            if (this.price)
+              this.details = this.details.filter(
+                (data: any) => data.price === this.price
+              );
+            if (this.property)
+              this.details = this.details.filter(
+                (data: any) => data.property === this.property
+              );
+            if (this.rating)
+              this.details = this.details.filter(
+                (data: any) => data.rating === this.rating
+              );
+            if (this.distance)
+              this.details = this.details.filter(
+                (data: any) => data.distance === this.distance
+              );
+            this.filters = this.details;
+          }
+          this.city = city;
         } else if (
           res.filter((data: any) => data.rating === city).length !== 0
         ) {
           this.details = res.filter((data: any) => data.rating === city);
+
+          if (this.rating) {
+            if (this.price)
+              this.details = this.details.filter(
+                (data: any) => data.price === this.price
+              );
+            if (this.property)
+              this.details = this.details.filter(
+                (data: any) => data.property === this.property
+              );
+            if (this.city)
+              this.details = this.details.filter(
+                (data: any) => data.city === this.city
+              );
+            if (this.distance)
+              this.details = this.details.filter(
+                (data: any) => data.distance === this.distance
+              );
+            this.filters = this.details;
+          }
+          this.rating = city;
         } else if (
           res.filter((data: any) => data.price === city).length !== 0
         ) {
           this.details = res.filter((data: any) => data.price === city);
+          if (this.price) {
+            if (this.rating)
+              this.details = this.details.filter(
+                (data: any) => data.rating === this.rating
+              );
+            if (this.property)
+              this.details = this.details.filter(
+                (data: any) => data.property === this.property
+              );
+            if (this.city)
+              this.details = this.details.filter(
+                (data: any) => data.city === this.city
+              );
+            if (this.distance)
+              this.details = this.details.filter(
+                (data: any) => data.distance === this.distance
+              );
+            this.filters = this.details;
+          }
+
+          this.price = city;
         } else if (
           res.filter((data: any) => data.property === city).length !== 0
         ) {
           this.details = res.filter((data: any) => data.property === city);
+          if (this.property) {
+            if (this.price)
+              this.details = this.details.filter(
+                (data: any) => data.price === this.price
+              );
+            if (this.rating)
+              this.details = this.details.filter(
+                (data: any) => data.rating === this.rating
+              );
+            if (this.city)
+              this.details = this.details.filter(
+                (data: any) => data.city === this.city
+              );
+            if (this.distance)
+              this.details = this.details.filter(
+                (data: any) => data.distance === this.distance
+              );
+            this.filters = this.details;
+          }
+          this.property = city;
         } else if (
           res.filter((data: any) => data.distance == city).length !== 0
         ) {
           this.details = res.filter((data: any) => data.distance == city);
+
+          if (this.distance) {
+            if (this.price)
+              this.details = this.details.filter(
+                (data: any) => data.price === this.price
+              );
+            if (this.property)
+              this.details = this.details.filter(
+                (data: any) => data.property === this.property
+              );
+            if (this.city)
+              this.details = this.details.filter(
+                (data: any) => data.city === this.city
+              );
+            if (this.rating)
+              this.details = this.details.filter(
+                (data: any) => data.rating === this.rating
+              );
+            this.filters = this.details;
+          }
+          this.distance = city;
         }
+        if (this.boolVal) {
+          this.filters = this.details;
+          this.boolVal = false;
+        }
+        this.filters = this.findSimilarObjects(
+          this.details,
+          this.filters,
+          'id'
+        );
+        console.log(this.filters, '  ', this.details);
+
+        this.details = this.filters;
 
         console.log(this.details);
       },
