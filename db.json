@@ -309,46 +309,6 @@
       "image": "https://loremflickr.com/640/480/city",
       "favorite": true,
       "rating": "0"
-    },
-    {
-      "id": "31f2",
-      "city": "tirunelveli",
-      "property": "house",
-      "distance": 35335,
-      "price": "33333",
-      "image": "https://loremflickr.com/640/480/city",
-      "favorite": true,
-      "rating": "0"
-    },
-    {
-      "id": "0dd9",
-      "city": "tirunelveli",
-      "property": "house",
-      "distance": 35335,
-      "price": "33333",
-      "image": "https://loremflickr.com/640/480/city",
-      "favorite": true,
-      "rating": "0"
-    },
-    {
-      "id": "9221",
-      "city": "tirunelveli",
-      "property": "house",
-      "distance": 35335,
-      "price": "33333",
-      "image": "https://loremflickr.com/640/480/city",
-      "favorite": true,
-      "rating": "0"
-    },
-    {
-      "id": "4008",
-      "city": "tirunelveli",
-      "property": "house",
-      "distance": 35335,
-      "price": "33333",
-      "image": "https://loremflickr.com/640/480/city",
-      "favorite": true,
-      "rating": "0"
     }
   ]
 }
