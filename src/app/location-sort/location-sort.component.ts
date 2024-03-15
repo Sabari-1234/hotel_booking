@@ -33,30 +33,31 @@ export class LocationSortComponent implements OnInit {
       }
     );
   };
-  uniqueRatings: any;
-  uniqueCities: any;
-  uniqueProperties: any;
-  uniqueDistances: any;
-  uniquePrices: any;
+  // uniqueRatings: any;
+  // uniqueCities: any;
+  // uniqueProperties: any;
+  // uniqueDistances: any;
+  // uniquePrices: any;
   ngOnInit(): void {
     this.cityName = this.firstvalue;
     this.fireEvent();
     this.getData();
-    this.uniqueRatings = Array.from(
-      new Set(this.api.details.map((obj: any) => obj.rating))
-    ).sort((a: any, b: any) => a - b);
-    this.uniqueCities = Array.from(
-      new Set(this.api.details.map((obj: any) => obj.city))
-    ).sort();
-    this.uniqueProperties = Array.from(
-      new Set(this.api.details.map((obj: any) => obj.property))
-    ).sort();
-    this.uniqueDistances = Array.from(
-      new Set(this.api.details.map((obj: any) => obj.distance))
-    ).sort((a: any, b: any) => a - b);
-    this.uniquePrices = Array.from(
-      new Set(this.api.details.map((obj: any) => obj.price))
-    ).sort((a: any, b: any) => a - b);
+    // this.uniqueRatings = Array.from(
+    //   new Set(this.api.details.map((obj: any) => obj.rating))
+    // ).sort((a: any, b: any) => a - b);
+    // this.uniqueCities = Array.from(
+    //   new Set(this.api.details.map((obj: any) => obj.city))
+    // ).sort();
+    // this.uniqueProperties = Array.from(
+    //   new Set(this.api.details.map((obj: any) => obj.property))
+    // ).sort();
+    // this.uniqueDistances = Array.from(
+    //   new Set(this.api.details.map((obj: any) => obj.distance))
+    // ).sort((a: any, b: any) => a - b);
+    // this.uniquePrices = Array.from(
+    //   new Set(this.api.details.map((obj: any) => obj.price))
+    // ).sort((a: any, b: any) => a - b);
+    //this.api.getUniqueData();
   }
   getcity() {
     return this.cityName;
