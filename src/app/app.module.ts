@@ -34,6 +34,7 @@ import { BlockModelComponent } from './block-model/block-model.component';
 import { AddBlockComponent } from './add-block/add-block.component';
 import { MenuComponent } from './menu/menu.component';
 import { LodingComponent } from './loding/loding.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -69,6 +70,7 @@ import { LodingComponent } from './loding/loding.component';
     MatIconModule,
     HttpClientModule,
     FormsModule,
+    MatDialogModule,
   ],
   providers: [provideClientHydration(), provideAnimationsAsync()],
   bootstrap: [AppComponent],
