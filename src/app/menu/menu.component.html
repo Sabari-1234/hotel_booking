@@ -5,4 +5,13 @@
   >
     Add
   </button>
+  <div
+    class="absolute h-[100vh] w-[100vw] flex justify-center items-center bg-[rgba(128,128,128,0.47)] z-10 -right-[210px] -top-[3.75rem]"
+    [ngClass]="{ 'block ': bool, 'hidden ': !bool }"
+    (click)="close($event)"
+  >
+    <div class="w-[500px] right-64" (click)="child($event)">
+      <app-add-block></app-add-block>
+    </div>
+  </div>
 </div>

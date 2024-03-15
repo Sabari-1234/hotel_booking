@@ -1,7 +1,5 @@
 import { Component, Input } from '@angular/core';
 import { ApiService } from '../shared/api.service';
-import { MatDialog } from '@angular/material/dialog';
-import { AddBlockComponent } from '../add-block/add-block.component';
 
 @Component({
   selector: 'app-menu',
@@ -9,8 +7,20 @@ import { AddBlockComponent } from '../add-block/add-block.component';
   styleUrl: './menu.component.css',
 })
 export class MenuComponent {
-  constructor(public api: ApiService, public dia: MatDialog) {}
+  bool: any = false;
+  constructor(public api: ApiService) {}
   boolFun(e: any) {
-    this.dia.open(AddBlockComponent);
+    e.stopPropagation();
+    this.bool = true;
+
+    console.log(this.bool);
+  }
+  close(e: any) {
+    e.stopPropagation();
+    this.bool = false;
+    console.log(this.bool);
+  }
+  child(e: any) {
+    e.stopPropagation();
   }
 }

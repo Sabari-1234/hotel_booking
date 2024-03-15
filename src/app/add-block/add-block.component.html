@@ -1,4 +1,4 @@
-<div class="form-card1 w-[500px] h-[60%]">
+<div class="form-card1">
   <div class="form-card2">
     <form class="form" #form1="ngForm">
       <p class="form-heading">Enter Hotel Details</p>
@@ -45,11 +45,7 @@
         />
       </div>
 
-      <button
-        class="sendMessage-btn"
-        (click)="AddBlock(form1.value)"
-        mat-dialog-close
-      >
+      <button class="sendMessage-btn" (click)="AddBlock(form1.value)">
         Add Data
       </button>
     </form>
