@@ -11,8 +11,6 @@ export class AddBlockComponent {
   AddBlock(form: any) {
     console.log(form);
 
-    const id = this.api.details.length;
-    console.log(id);
     this.api
       .postData(
         JSON.stringify({
@@ -20,14 +18,12 @@ export class AddBlockComponent {
           image: 'https://loremflickr.com/640/480/city',
           favorite: true,
           rating: '0',
-          id: String(id + 1),
         })
       )
       .subscribe(
         (res) => {
           console.log(res);
           this.api.getdata();
-          // this.api.getUniqueData();
         },
         (err) => {
           console.log(err);

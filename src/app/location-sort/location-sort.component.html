@@ -14,30 +14,27 @@
     >
       <option [value]="firstvalue">{{ firstvalue }}</option>
       <ng-container *ngIf="name == 'Location'">
-        <option [value]="city" *ngFor="let city of api.uniqueCities">
+        <option [value]="city" *ngFor="let city of uniqueCities">
           {{ city }}
         </option>
       </ng-container>
       <ng-container *ngIf="name == 'Guest rating'">
-        <option [value]="rating" *ngFor="let rating of api.uniqueRatings">
+        <option [value]="rating" *ngFor="let rating of uniqueRatings">
           {{ rating }}
         </option>
       </ng-container>
       <ng-container *ngIf="name == 'Price:'">
-        <option [value]="price" *ngFor="let price of api.uniquePrices">
+        <option [value]="price" *ngFor="let price of uniquePrices">
           ₹ {{ price }}
         </option>
       </ng-container>
       <ng-container *ngIf="name == 'Property type'">
-        <option
-          [value]="property"
-          *ngFor="let property of api.uniqueProperties"
-        >
+        <option [value]="property" *ngFor="let property of uniqueProperties">
           {{ property }}
         </option>
       </ng-container>
       <ng-container *ngIf="name == 'Filters'">
-        <option [value]="distance" *ngFor="let distance of api.uniqueDistances">
+        <option [value]="distance" *ngFor="let distance of uniqueDistances">
           {{ distance / 1000 }} km
         </option>
       </ng-container>

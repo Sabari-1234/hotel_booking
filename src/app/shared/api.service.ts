@@ -314,7 +314,6 @@ export class ApiService {
         console.log(this.details);
 
         console.log(this.details);
-        this.getUniqueData();
       },
       (err: any) => {
         console.log(err);
@@ -365,29 +364,5 @@ export class ApiService {
 
       this.getdata();
     }
-  }
-
-  uniqueRatings: any;
-  uniqueCities: any;
-  uniqueProperties: any;
-  uniqueDistances: any;
-  uniquePrices: any;
-
-  getUniqueData() {
-    this.uniqueRatings = Array.from(
-      new Set(this.details.map((obj: any) => obj.rating))
-    ).sort((a: any, b: any) => a - b);
-    this.uniqueCities = Array.from(
-      new Set(this.details.map((obj: any) => obj.city))
-    ).sort();
-    this.uniqueProperties = Array.from(
-      new Set(this.details.map((obj: any) => obj.property))
-    ).sort();
-    this.uniqueDistances = Array.from(
-      new Set(this.details.map((obj: any) => obj.distance))
-    ).sort((a: any, b: any) => a - b);
-    this.uniquePrices = Array.from(
-      new Set(this.details.map((obj: any) => obj.price))
-    ).sort((a: any, b: any) => a - b);
   }
 }
